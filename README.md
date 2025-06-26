@@ -17,12 +17,11 @@ This repository contains everything the four assessed assignments of the **COMP0
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YourUser/UCL-COMP0089-RL-Coursework
+git clone https://github.com/BenoitCou/UCL-COMP0089-RL-Coursework
 cd UCL-COMP0089-RL-Coursework
 
 # 2. (Optional) create & activate a virtual environment
 python -m venv .venv
-source .venv/bin/activate        # or .venv\Scripts\activate on Windows
 
 # 3. Install the Python dependencies
 pip install -r requirements.txt
