@@ -27,7 +27,7 @@ python -m venv .venv
 pip install -r requirements.txt
 
 # 4. Launch the notebooks
-jupyter notebook UCL_RL_assignment_2025,_part_I.ipynb
+jupyter notebook UCL_RL_part_I.ipynb
 # …and so on for parts II–IV
 ```
 
