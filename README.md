@@ -5,10 +5,10 @@ This repository contains everything the four assessed assignments of the **COMP0
 
 | Path                                             | Description                                                                                                                        |
 | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `UCL_RL_part_I.ipynb`            | **Part I – Multi-armed bandits** &nbsp;•&nbsp; implementations of *UCB*, *ε-greedy* with time-varying schedules, and *softmax* agents; three experiments (stationary, sparse-reward, non-stationary) plus analytical questions on regret. |
-| `UCL_RL_part_II.ipynb`           | **Part II – Tabular value-based RL** &nbsp;•&nbsp; TD(0) prediction, policy iteration and value-iteration on a Gridworld; proofs of Bellman-operator properties and empirical comparison of convergence speed. |
-| `UCL_RL_part_III.ipynb`          | **Part III – Policy-gradient & actor-critic** &nbsp;•&nbsp; JAX/bsuite implementation of an actor-critic with shared network, advantage baseline, entropy regularisation; exploration of a preference-based alternative update rule. |
-| `UCL_RL,_part IV.ipynb`           | **Part IV – Off-policy multi-step returns** &nbsp;•&nbsp; full/weighted importance sampling, n-step TD with behaviour ≠ target policy, and theoretical analysis of a family of contraction-mapping updates. |
+| `UCL_RL_part_1.ipynb`            | **Part I – Multi-armed bandits** &nbsp;•&nbsp; implementations of *UCB*, *ε-greedy* with time-varying schedules, and *softmax* agents; three experiments (stationary, sparse-reward, non-stationary) plus analytical questions on regret. |
+| `UCL_RL_part_2.ipynb`           | **Part II – Tabular value-based RL** &nbsp;•&nbsp; TD(0) prediction, policy iteration and value-iteration on a Gridworld; proofs of Bellman-operator properties and empirical comparison of convergence speed. |
+| `UCL_RL_part_3.ipynb`          | **Part III – Policy-gradient & actor-critic** &nbsp;•&nbsp; JAX/bsuite implementation of an actor-critic with shared network, advantage baseline, entropy regularisation; exploration of a preference-based alternative update rule. |
+| `UCL_RL_part_4.ipynb`           | **Part IV – Off-policy multi-step returns** &nbsp;•&nbsp; full/weighted importance sampling, n-step TD with behaviour ≠ target policy, and theoretical analysis of a family of contraction-mapping updates. |
 | `requirements.txt`                               | Python dependencies (numpy ≥ 1.25, matplotlib, seaborn, jupyter, gymnasium, bsuite, jax, tqdm).                                     |
 
 ---
@@ -24,7 +24,7 @@ cd UCL-COMP0089-Reinforcement-Learning-Coursework-1
 pip install -r requirements.txt
 
 # 3. Launch the notebooks
-jupyter notebook UCL_RL_part_I.ipynb
+jupyter notebook UCL_RL_part_1.ipynb
 # …and so on for parts II–IV
 ```
 
