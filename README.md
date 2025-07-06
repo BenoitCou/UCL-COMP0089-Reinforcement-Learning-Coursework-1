@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 # 3. Launch the notebooks
 jupyter notebook UCL_RL_part_1.ipynb
-# …and so on for parts II–IV
+# …and so on for parts 2–4
 ```
 
 ---
