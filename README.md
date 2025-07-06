@@ -17,7 +17,7 @@ This repository contains everything the four assessed assignments of the **COMP0
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/BenoitCou/UCL-COMP0089-RL-Coursework
+git clone https://github.com/BenoitCou/UCL-COMP0089-RL-Coursework-1
 cd UCL-COMP0089-RL-Coursework
 
 # 2. Install the Python dependencies
