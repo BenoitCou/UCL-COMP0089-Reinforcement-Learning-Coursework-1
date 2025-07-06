@@ -20,13 +20,10 @@ This repository contains everything the four assessed assignments of the **COMP0
 git clone https://github.com/BenoitCou/UCL-COMP0089-RL-Coursework
 cd UCL-COMP0089-RL-Coursework
 
-# 2. (Optional) create & activate a virtual environment
-python -m venv .venv
-
-# 3. Install the Python dependencies
+# 2. Install the Python dependencies
 pip install -r requirements.txt
 
-# 4. Launch the notebooks
+# 3. Launch the notebooks
 jupyter notebook UCL_RL_part_I.ipynb
 # …and so on for parts II–IV
 ```
