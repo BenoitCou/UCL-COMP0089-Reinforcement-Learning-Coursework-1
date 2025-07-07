@@ -32,25 +32,35 @@ jupyter notebook UCL_RL_part_1.ipynb
 
 ## Coursework overview  
 
-**Part I – Multi-armed bandits**
+**Part I**
 - **Agents** — coded *UCB*, *ε-greedy* with linear decay, and a *softmax* agent; all share a generic incremental update for \(\hat q_t(a)\).
-- **Experiments** — compared regret on Bernoulli, sparse-reward and non-stationary bandits; analysed when each exploration strategy excels.
+- **Experiments** — compared regret on stationary, sparse-reward and non-stationary bandits; analysed when each exploration strategy excels.
 - **Theory questions** — derived regret bounds for UCB and explained the exploration–exploitation trade-off.
 
-**Part II – Tabular RL**
-- **TD(0) prediction** — implemented on-policy TD for a random agent and verified empirical contraction toward \(v_\pi\).
-- **Control** — policy-iteration and value-iteration agents for the 4 × 4 Gridworld; measured iteration counts vs TD sweeps.
-- **Bellman proofs** — showed monotonicity & contraction of \(\mathcal T_\pi\) and derived the unique fixed point.
+**Part II**
+- **TD(0) Prediction** — Implemented on-policy TD learning for a random agent and verified empirical contraction toward \(v_\pi\).
+- **Control** — Implemented policy iteration and value iteration agents for a grid world environment; measured iteration counts vs TD sweeps.
+- **Bellman Proofs** — Demonstrated monotonicity and contraction of \(\mathcal{T}_\pi\) and derived the unique fixed point.
+- **Grid World Environment** — Created a grid world with walls, goals, and empty spaces, where the agent can move in four directions and receive rewards.
+- **Helper Functions** — Developed functions for running experiments, plotting values, and analyzing results.
 
-**Part III – Policy gradient**
-- **Actor-critic** — stochastic softmax policy, critic with TD(λ), and baseline-subtracted REINFORCE estimate.
-- **Preference-based update** — explored a shared-parameter formulation, demonstrated lower variance on CartPole-bsuite.
-- **Analysis** — discussed entropy regularisation and the effect of learning-rate coupling between actor and critic.
+# Part III
+- **Actor-Critic Implementation** — Developed an actor-critic agent using a neural network with JAX, featuring a stochastic softmax policy and TD(λ) for the critic. Implemented baseline-subtracted REINFORCE for policy updates.
+- **Policy Gradient** — Computed stochastic estimates of the policy gradient using one-step transitions, incorporating a baseline to reduce variance.
+- **Value Function Learning** — Implemented TD(0) updates for the value function, enabling simultaneous learning of policy and value estimates.
+- **Optimization with Adam** — Applied the Adam optimization algorithm for adaptive learning rates, improving the stability and efficiency of training.
+- **Epsilon-Greedy Policy** — Implemented an alternative agent using an epsilon-greedy policy for action selection, with a preference-based update rule for learning.
+- **Comparison of Optimizers** — Conducted experiments comparing the performance of the Adam optimizer against standard SGD, demonstrating faster convergence and stability with Adam.
+- **Analysis of Asymptotic Performance** — Evaluated the best achievable average returns for both the actor-critic and epsilon-greedy agents, discussing potential improvements and the role of preferences in action selection.
 
-**Part IV – Off-policy returns & new TD-like operators**
-- **Importance sampling** — implemented ordinary IS, weighted IS and per-decision IS; compared bias/variance as function of horizon.
-- **N-step returns** — unified view of eligibility-trace style updates under off-policy sampling.
-- **Convergence proof** — proved a sufficient contraction condition for a family of linear operators; highlighted the role of the discount factor and behaviour-target support mismatch.
+
+# Part IV
+- **Off-Policy Multi-Step Return Estimates** — Implemented various off-policy return functions, including full importance sampling, per-decision importance sampling, control variates, and adaptive bootstrapping. Analyzed their accuracy and effectiveness in reducing value error.
+- **Temporal Difference Error Analysis** — Investigated the convergence properties and variance of updates for different temporal difference errors. Provided proofs and conditions under which these updates converge to optimal value functions.
+- **Comparison of Return Estimates** — Evaluated and ranked different return estimates based on their mean squared value error. Discussed the implications of choosing the best return estimate and potential reasons for not always selecting the top-performing method.
+- **Behavior Policy Analysis** — Examined the impact of different behavior policies on the convergence and variance of temporal difference learning. Proposed and justified conditions under which certain policies might be preferred.
+- **Variance Reduction Techniques** — Explored methods to reduce variance in off-policy learning, including the use of control variates and adaptive bootstrapping. Discussed the trade-offs between bias and variance in these approaches.
+- **Theoretical Insights** — Provided theoretical analysis and proofs related to the convergence of value functions under different conditions and behavior policies. Discussed the implications of the deadly triad in reinforcement learning.
 
 ---
 
