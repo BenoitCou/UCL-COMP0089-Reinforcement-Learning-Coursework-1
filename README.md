@@ -44,7 +44,7 @@ jupyter notebook UCL_RL_part_1.ipynb
 - **Grid World Environment** — Created a grid world with walls, goals, and empty spaces, where the agent can move in four directions and receive rewards.
 - **Helper Functions** — Developed functions for running experiments, plotting values, and analyzing results.
 
-# Part III
+**Part III**
 - **Actor-Critic Implementation** — Developed an actor-critic agent using a neural network with JAX, featuring a stochastic softmax policy and TD(λ) for the critic. Implemented baseline-subtracted REINFORCE for policy updates.
 - **Policy Gradient** — Computed stochastic estimates of the policy gradient using one-step transitions, incorporating a baseline to reduce variance.
 - **Value Function Learning** — Implemented TD(0) updates for the value function, enabling simultaneous learning of policy and value estimates.
@@ -54,7 +54,7 @@ jupyter notebook UCL_RL_part_1.ipynb
 - **Analysis of Asymptotic Performance** — Evaluated the best achievable average returns for both the actor-critic and epsilon-greedy agents, discussing potential improvements and the role of preferences in action selection.
 
 
-# Part IV
+**Part IV**
 - **Off-Policy Multi-Step Return Estimates** — Implemented various off-policy return functions, including full importance sampling, per-decision importance sampling, control variates, and adaptive bootstrapping. Analyzed their accuracy and effectiveness in reducing value error.
 - **Temporal Difference Error Analysis** — Investigated the convergence properties and variance of updates for different temporal difference errors. Provided proofs and conditions under which these updates converge to optimal value functions.
 - **Comparison of Return Estimates** — Evaluated and ranked different return estimates based on their mean squared value error. Discussed the implications of choosing the best return estimate and potential reasons for not always selecting the top-performing method.
